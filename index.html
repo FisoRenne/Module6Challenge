@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>5 Day Weather API</title>
+   
+</head>
+<main>
+  <body>
+    <header class="header">
+      <div class="searchBar">
+        <input id="searchInput" type="text" placeholder="Type City Name..">
+        <button id ="submit"> Search </button>
+        </div>
+        <div class="recentSearch">
+          <h2> Recent Searches:</h2>
+          <div id="prevSearch"></div>
+          </div>
+          <div id="prevresults"></div>
+        </header>
+         <div class="citynames"></div>
+        </div>
+        <div class="headers">
+      <div class="leftheader">
+        <span id="cityname"></span>
+        <img id="currIcon" > 
+      </div>
+      <div class="rightheader">
+        <div class="info">
+          <div class="label">Current Temp</div>
+          <span id="currtemp" class="data"></span>&deg;
+       </div>
+        <div class="info">
+          <div class="label">Wind</div>
+          <div><span id="currwind" class="data"></span><span class="value-sub-info">mph</span></div>
+        </div>
+        <div class="info">
+          <div class="label">Humidity</div>
+          <div><span id="currhumid" class="data"></span><span class="value-sub-info">%</span></div>
+        </div>
+      </div>
+      </div>
+    <section class="fivedayweather">
+      <div class="daycarddate">
+        <div id="day1date"> </div>
+        <img>
+          <div class="label1">Temp</div>
+          <span id="day1temp"class="data1">&deg;</span>
+          <div class="label1">Wind</div>
+          <div><span id="day1wind"class="data1"></span><span class="value-sub-info">mph</span></div>
+          <div class="label1">Humidity</div>
+          <div><span id="day1humid"class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day1icon">
+       </div>
+       <div class="daycarddate">
+        <div id="day2date"> </div>
+        <img>
+          <div  class="label1">Temp</div>
+          <span id="day2temp" class="data1">&deg;</span>
+          <div class="label1">Wind</div>
+          <div><span id="day2wind"class="data1"></span><span class="value-sub-info">mph</span></div>
+          <div class="label1">Humidity</div>
+          <div><span id="day2humid"class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day2icon">
+       </div>
+       <div class="daycarddate">
+        <div id="day3date"> </div>
+        <img>
+          <div class="label1">Temp</div>
+          <span id="day3temp"class="data1">&deg;</span>
+          <div class="label1">Wind</div>
+          <div><span id="day3wind" class="data1"></span><span class="value-sub-info">mph</span></div>
+          <div class="label1">Humidity</div>
+          <div><span id="day3humid" class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day3icon">
+       </div>
+       <div class="daycarddate">
+        <div id="day4date"> </div>
+        <img>
+          <div class="label1">Temp</div>
+          <span id="day4temp" class="data1">&deg;</span>
+          <div class="label1">Wind</div>
+          <div><span id="day4wind" class="data1"></span><span class="value-sub-info">mph</span></div>
+          <div class="label1">Humidity</div>
+          <div><span id="day4humid" class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day4icon">
+       </div>
+       <div class="daycarddate">
+        <div id="day5date" > </div>
+        <img>
+          <div class="label1">Temp</div>
+          <span id="day5temp" class="data1">&deg;</span>
+          <div class="label1">Wind</div>
+          <div><span id="day5wind" class="data1"></span><span class="value-sub-info">mph</span></div>
+          <div class="label1">Humidity</div>
+          <div><span id="day5humid" class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day5icon">
+       </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</main>
+
+</html>

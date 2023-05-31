@@ -13,85 +13,91 @@
     <header class="header">
       <div class="searchBar">
         <input id="searchInput" type="text" placeholder="Type City Name..">
-        <button id ="submit" onclick="saveData()"> Search </button>
+        <button id ="submit"> Search </button>
         </div>
-        <div class="recentSearches">
+        <div class="recentSearch">
           <h2> Recent Searches:</h2>
+          <div id="prevSearch"></div>
           </div>
-          <div class="prevresults">sdcsdcds</div>
+          <div id="prevresults"></div>
         </header>
          <div class="citynames"></div>
         </div>
         <div class="headers">
       <div class="leftheader">
-        <span class="cityname" data-current-city>Austin</span>
-        <img class="weathericonlarge" src="images/sunny icon.png"> 
+        <span id="cityname"></span>
+        <img id="currIcon" > 
       </div>
       <div class="rightheader">
         <div class="info">
           <div class="label">Current Temp</div>
-          <span class="data" data-current-temp>78</span>&deg;
+          <span id="currtemp" class="data"></span>&deg;
        </div>
         <div class="info">
           <div class="label">Wind</div>
-          <div><span class="data" data-current-wind>8.43</span><span class="value-sub-info">mph</span></div>
+          <div><span id="currwind" class="data"></span><span class="value-sub-info">mph</span></div>
         </div>
         <div class="info">
           <div class="label">Humidity</div>
-          <div><span class="data" data-current-humidity>40</span><span class="value-sub-info">%</span></div>
+          <div><span id="currhumid" class="data"></span><span class="value-sub-info">%</span></div>
         </div>
       </div>
       </div>
-    <section class="fivedayweather" data-5ay-section>
+    <section class="fivedayweather">
       <div class="daycarddate">
-        <div data-5day-section> 04/19/2023</div>
+        <div id="day1date"> </div>
         <img>
-          <div class="label1">Current Temp</div>
-          <span class="data1" data-current-temp>78&deg;</span>
-          <div class="label">Wind</div>
-          <div><span class="data1" data-current-wind>8.43</span><span class="value-sub-info">mph</span></div>
+          <div class="label1">Temp</div>
+          <span id="day1temp"class="data1">&deg;</span>
+          <div class="label1">Wind</div>
+          <div><span id="day1wind"class="data1"></span><span class="value-sub-info">mph</span></div>
           <div class="label1">Humidity</div>
-          <div><span class="data1" data-current-humidity>40</span><span class="value-sub-info">%</span></div>
+          <div><span id="day1humid"class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day1icon">
        </div>
        <div class="daycarddate">
-        <div data-5day-section> 04/19/2023</div>
+        <div id="day2date"> </div>
         <img>
-          <div class="label1">Current Temp</div>
-          <span class="data1" data-current-temp>78&deg;</span>
+          <div  class="label1">Temp</div>
+          <span id="day2temp" class="data1">&deg;</span>
           <div class="label1">Wind</div>
-          <div><span class="data1" data-current-wind>8.43</span><span class="value-sub-info">mph</span></div>
+          <div><span id="day2wind"class="data1"></span><span class="value-sub-info">mph</span></div>
           <div class="label1">Humidity</div>
-          <div><span class="data1" data-current-humidity>40</span><span class="value-sub-info">%</span></div>
+          <div><span id="day2humid"class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day2icon">
        </div>
        <div class="daycarddate">
-        <div data-5day-section> 04/19/2023</div>
+        <div id="day3date"> </div>
         <img>
-          <div class="label1">Current Temp</div>
-          <span class="data1" data-current-temp>78&deg;</span>
+          <div class="label1">Temp</div>
+          <span id="day3temp"class="data1">&deg;</span>
           <div class="label1">Wind</div>
-          <div><span class="data1" data-current-wind>8.43</span><span class="value-sub-info">mph</span></div>
+          <div><span id="day3wind" class="data1"></span><span class="value-sub-info">mph</span></div>
           <div class="label1">Humidity</div>
-          <div><span class="data1" data-current-humidity>40</span><span class="value-sub-info">%</span></div>
+          <div><span id="day3humid" class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day3icon">
        </div>
        <div class="daycarddate">
-        <div data-5day-section> 04/19/2023</div>
+        <div id="day4date"> </div>
         <img>
-          <div class="label1">Current Temp</div>
-          <span class="data1" data-current-temp>78&deg;</span>
+          <div class="label1">Temp</div>
+          <span id="day4temp" class="data1">&deg;</span>
           <div class="label1">Wind</div>
-          <div><span class="data1" data-current-wind>8.43</span><span class="value-sub-info">mph</span></div>
+          <div><span id="day4wind" class="data1"></span><span class="value-sub-info">mph</span></div>
           <div class="label1">Humidity</div>
-          <div><span class="data1" data-current-humidity>40</span><span class="value-sub-info">%</span></div>
+          <div><span id="day4humid" class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day4icon">
        </div>
        <div class="daycarddate">
-        <div data-5day-section> 04/19/2023</div>
+        <div id="day5date" > </div>
         <img>
-          <div class="label1">Current Temp</div>
-          <span class="data1" data-current-temp>78&deg;</span>
+          <div class="label1">Temp</div>
+          <span id="day5temp" class="data1">&deg;</span>
           <div class="label1">Wind</div>
-          <div><span class="data1" data-current-wind>8.43</span><span class="value-sub-info">mph</span></div>
+          <div><span id="day5wind" class="data1"></span><span class="value-sub-info">mph</span></div>
           <div class="label1">Humidity</div>
-          <div><span class="data1" data-current-humidity>40</span><span class="value-sub-info">%</span></div>
+          <div><span id="day5humid" class="data1"></span><span class="value-sub-info">%</span></div>
+          <img id="day5icon">
        </div>
     </section>
     <script src="script.js"></script>
